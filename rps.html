@@ -4,25 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Game</h1>
-    <h2>Rock, Paper and Scissors</h2>
-    <h3>Choose from one of these:</h3>
-    <button class="rock">ROCK</button>
-    <button class="scissor">SCISSOR</button>
-    <button class="paper">PAPER</button>
-    <p class="display_user"></p>
-    <p class="display_comp"></p>
-    <p class="result"></p>
-    <div>POINTS</div>
-    <div>
-        COMPUTER: <div class="computer"></div>
+    <div class="container">
+        <div class="header">
+           <h1 class="header1">Game</h1>
+           <h2 class="header2">Rock, Paper and Scissors</h2>
+        </div>
+        <div class="body">
+            <h3>Choose from one of these:</h3>
+            <button class="button rock">ROCK</button>
+            <button class="button scissor">SCISSOR</button>
+            <button class="button paper">PAPER</button>
+        </div>   
+    <div class="main">
+        <div class="display">
+            <div class="dis-user">
+                <div class="note-user">YOU</div>
+                <p class="display_user"></p>
+            </div>
+            <div class="dis-user">
+                <div class="note-user">COMPUTER</div>
+                <p class="display_comp"></p>
+            </div>
+        </div>
+        <p class="result"></p>    
     </div>
-    <div>
-        USER: <div class="user"></div>
+    <div class="final">
+        <div class="points">POINTS</div>
+        <div class="box">
+          <div class="box1">
+              <div class="note"> COMPUTER</div> 
+              <div class="computer"></div>
+          </div>
+          <div class="box2">
+            <div class="note">USER</div>
+              <div class="user"></div>
+          </div>
+          <div class="box3">
+            <div class="note">PLAYED</div>
+            <div class="played"></div>
+          </div>
+        </div>    
     </div>
-    <div class="played"></div>
+    <div class="reset">
+        <button class="reset-game">
+            New Game
+        </button>
+    </div>
+    <div class="won">You won the game!</div>
+    <div class="lose">Computer won the game!</div>
+    <div class="tie">It's a tie!</div>    
     <script src="rps.js"></script>
+    </div>
 </body>
 </html>

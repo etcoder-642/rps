@@ -62,6 +62,29 @@ function gamerules(fvalue, svalue){
 
 
 function playgame(uservalue) {
+    if(count == 10){
+        if(count_user > count_comp){
+            document.querySelector(".won").style.display = "block";
+            rk.style.backgroundColor = "burlywood";
+            pr.style.backgroundColor = "burlywood";
+            sc.style.backgroundColor = "burlywood";
+            return;
+        }else if(count_comp > count_user){
+            document.querySelector(".lose").style.display = "block";
+            rk.style.backgroundColor = "burlywood";
+            pr.style.backgroundColor = "burlywood";
+            sc.style.backgroundColor = "burlywood";
+            return;
+        }else{
+            document.querySelector(".tie").style.display = "block";
+            rk.style.backgroundColor = "burlywood";
+            pr.style.backgroundColor = "burlywood";
+            sc.style.backgroundColor = "burlywood";
+            return;
+        }
+
+    }
+
     function rvalue(){
         let rn = Math.floor(Math.random()*100);
         if(rn%3 == 1){
@@ -74,23 +97,32 @@ function playgame(uservalue) {
     }
     let rval = rvalue()
 
-    display_user.textContent = `You've chosen ${uservalue}`
-    display_comp.textContent = `The Computer have Chosen ${rval}`
+    display_user.textContent = `${uservalue}`
+    display_user.style.backgroundColor = "#cd853f"
+    display_comp.textContent = `${rval}`
+    display_comp.style.backgroundColor = "#cd853f"
+ 
     winner = gamerules(rval, uservalue);
 
     if(winner == "tie"){
         setTimeout(() => {
             result.textContent = "No point!"
-        }, 2000)
+            result.style.backgroundColor = "#808080";
+            result.style.border = "none";
+        }, 300)
     }else if(winner == uservalue ){
         setTimeout(() => {
-            result.textContent = "User have got a point!"
-        }, 2000)
+            result.textContent = "You have got a point!"
+            result.style.backgroundColor = "#008000"; 
+            result.style.border = "none";
+        }, 300)
         count_user += 1;
     }else if(winner == rval){
         setTimeout(() => {
-            result.textContent = "Computer have got a point!"
-        }, 2000)
+            result.textContent = "Computer have got a point!";
+            result.style.backgroundColor = "#d60101";
+            result.style.border = "none";
+        }, 300)
         count_comp +=1;
     }
     comp.textContent = count_comp;
@@ -98,18 +130,6 @@ function playgame(uservalue) {
     count++;
     played.textContent = count;
     }
-
-    
-
-// if(count == 10){
-//     if(count_user > count_comp){
-//         console.log(`User have won with ${count_user} points!`)
-//     }else if(count_comp > count_user){
-//         console.log(`Computer have won with ${count_comp} points!`)
-//     }else{
-//         console.log("It's a tie!")
-//     }
-// }
 
 rk.addEventListener("click", () => {
     playgame("ROCK");
@@ -120,4 +140,7 @@ pr.addEventListener("click", () => {
 sc.addEventListener("click", () => {
     playgame("SCISSOR");
 });
+document.querySelector(".reset-game").addEventListener("click", () => {
+    location.reload();
+})
 
