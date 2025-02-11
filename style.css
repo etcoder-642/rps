@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: #808080;
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
     border-radius: 10px;
     padding: 10px 25px;
     margin: auto;
-    background-color: antiquewhite;
-    box-shadow:0px 0px 20px 5px lightgray;
+    background-color: #faebd7;
+    box-shadow:0px 0px 20px 5px #d3d3d3;
 }
 
 .header {
@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color:#cd853f;
-  color: white;
+  color: #ffffff;
 }
 
 .body {
@@ -42,11 +42,11 @@ button {
     border: none;
     border-radius: 5px;
     background-color:#cd853f;
-    color: white;
+    color: #ffffff;
 }
 
 button:hover {
-    background-color:burlywood;
+    background-color:#deb887;
 }
 
 .main {
@@ -60,7 +60,7 @@ button:hover {
 .result {
     border: 1px solid #cd853f;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     min-height: 50px;
     margin: 5px;
     display: flex;
@@ -87,7 +87,7 @@ button:hover {
 
 .display_user, .display_comp {
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     width: 100%;
     margin: auto;
     padding: 15px;
@@ -119,7 +119,7 @@ button:hover {
     align-items: center;
     border-radius: 5px;
     background-color: #cd853f;
-    color: white;
+    color: #ffffff;
     height: 45px;
     padding: 4px 20px;
 }
@@ -127,11 +127,11 @@ button:hover {
 .reset-game {
     margin: 40px 0px;
     padding: 10px 0px;
-    background-color: orangered;
+    background-color: #ff4500;
 }
 
 .reset-game:hover{
-    background-color:red;
+    background-color:#ff0000;
 }
 
 .won {
@@ -139,7 +139,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -152,11 +152,11 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: red;
+    background-color: #ff0000;
     display: none;
 }
 
@@ -165,10 +165,10 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none;
-    background-color: gray;
+    background-color: #808080;
 }

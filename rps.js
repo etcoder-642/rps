@@ -65,21 +65,21 @@ function playgame(uservalue) {
     if(count == 10){
         if(count_user > count_comp){
             document.querySelector(".won").style.display = "block";
-            rk.style.backgroundColor = "burlywood";
-            pr.style.backgroundColor = "burlywood";
-            sc.style.backgroundColor = "burlywood";
+            rk.style.backgroundColor = "#deb887";
+            pr.style.backgroundColor = "#deb887";
+            sc.style.backgroundColor = "#deb887";
             return;
         }else if(count_comp > count_user){
             document.querySelector(".lose").style.display = "block";
-            rk.style.backgroundColor = "burlywood";
-            pr.style.backgroundColor = "burlywood";
-            sc.style.backgroundColor = "burlywood";
+            rk.style.backgroundColor = "#deb887";
+            pr.style.backgroundColor = "#deb887";
+            sc.style.backgroundColor = "#deb887";
             return;
         }else{
             document.querySelector(".tie").style.display = "block";
-            rk.style.backgroundColor = "burlywood";
-            pr.style.backgroundColor = "burlywood";
-            sc.style.backgroundColor = "burlywood";
+            rk.style.backgroundColor = "#deb887";
+            pr.style.backgroundColor = "#deb887";
+            sc.style.backgroundColor = "#deb887";
             return;
         }
 
