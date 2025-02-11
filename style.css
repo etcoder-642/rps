@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: gray;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,7 @@
     padding: 10px 25px;
     margin: auto;
     background-color: antiquewhite;
+    box-shadow:0px 0px 20px 5px lightgray;
 }
 
 .header {
